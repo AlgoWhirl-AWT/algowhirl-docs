@@ -1,0 +1,12 @@
+{
+  "name": "@clawdbot/skill-website-beian-checker",
+  "version": "1.0.0",
+  "description": "Website ICP beian (filing) compliance checker using Puppeteer",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {
+    "puppeteer": "^23.11.1",
+    "csv-stringify": "^6.5.2",
+    "p-limit": "^6.1.0"
+  }
+}

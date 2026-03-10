@@ -1,0 +1,26 @@
+# Environment variables with sensitive credentials
+.env
+
+# Node modules
+node_modules/
+
+# Test files with sensitive data
+test_*.jpg
+test_*.png
+test_*.pdf
+
+# Output files
+*_parsed.md
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*

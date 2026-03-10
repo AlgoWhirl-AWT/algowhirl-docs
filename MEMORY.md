@@ -1,0 +1,1 @@
+* **AWT Landing Update**: Hero/Tokenomics组件添加，本地dev运行，Vercel prep。2026-03-09 18:10 JST。

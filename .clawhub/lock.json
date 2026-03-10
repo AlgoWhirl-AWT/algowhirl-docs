@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "Gog": {
+      "version": "1.0.0",
+      "installedAt": 1772459760849
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1772459762926
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772459581511
+    },
+    "context-budgeting": {
+      "version": "1.0.0",
+      "installedAt": 1772985366915
+    },
+    "openclaw-context-optimizer": {
+      "version": "1.0.0",
+      "installedAt": 1772985546186
+    },
+    "optimize-context": {
+      "version": "1.0.0",
+      "installedAt": 1772985673172
+    }
+  }
+}

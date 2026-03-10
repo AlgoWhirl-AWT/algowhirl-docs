@@ -1,0 +1,39 @@
+{
+  "name": "textin-ocr",
+  "version": "1.0.0",
+  "description": "Textin OCR services including business license recognition, ID card recognition, document parsing, and general text recognition",
+  "author": "Claude",
+  "main": "index.js",
+  "commands": [
+    {
+      "name": "business-license",
+      "description": "Recognize business license information from an image",
+      "args": "<image_path_or_url>"
+    },
+    {
+      "name": "id-card",
+      "description": "Recognize ID card information from an image",
+      "args": "<image_path_or_url> [--front|--back]"
+    },
+    {
+      "name": "ocr",
+      "description": "General OCR text recognition from an image or PDF",
+      "args": "<image_path_or_url>"
+    },
+    {
+      "name": "parse-doc",
+      "description": "Parse document to markdown format",
+      "args": "<file_path_or_url> [--pages start,count]"
+    }
+  ],
+  "config": {
+    "app_id": {
+      "description": "Textin App ID (set via TEXTIN_APP_ID environment variable)",
+      "required": true
+    },
+    "secret_code": {
+      "description": "Textin Secret Code (set via TEXTIN_SECRET_CODE environment variable)",
+      "required": true
+    }
+  }
+}

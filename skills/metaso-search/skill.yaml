@@ -1,0 +1,10 @@
+name: metaso-search
+displayName: MetaSearch
+version: 1.0.0
+description: Search the web and read web pages using MetaSearch API
+author: junye
+user_invocable: true
+tools:
+  - Bash
+  - Read
+  - Write

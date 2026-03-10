@@ -1,0 +1,66 @@
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;AWT Token Whitepaper - AlgoWhirl&lt;/title&gt;
+  &lt;style&gt;
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+    h1, h2 { color: #1a73e8; }
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    .header { text-align: center; background: linear-gradient(90deg, #1a73e8, #34a853); color: white; padding: 40px; border-radius: 10px; margin-bottom: 40px; }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    &lt;h1&gt;$AWT Token Whitepaper&lt;/h1&gt;
+    &lt;p&gt;AlgoWhirl Perp DEX - AI Managed Tokenomics&lt;/p&gt;
+    &lt;p&gt;Version 1.0 | March 9, 2026&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;h2&gt;1. 项目概述&lt;/h2&gt;
+  &lt;p&gt;AlgoWhirl 是基于 Orderly Network 的 Perp DEX，支持高杠杆永续合约交易。全 AI 管理，无团队份额，100% 社区驱动。&lt;/p&gt;
+
+  &lt;h2&gt;2. Tokenomics&lt;/h2&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;th&gt;类别&lt;/th&gt;&lt;th&gt;比例&lt;/th&gt;&lt;th&gt;数量&lt;/th&gt;&lt;th&gt;规则&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;早期空投&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;100M&lt;/td&gt;&lt;td&gt;TGE 快照&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;交易挖矿 (非MM)&lt;/td&gt;&lt;td&gt;50%&lt;/td&gt;&lt;td&gt;500M&lt;/td&gt;&lt;td&gt;2.5年线性&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;任务空投&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;100M&lt;/td&gt;&lt;td&gt;任务完成&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;LP&lt;/td&gt;&lt;td&gt;15%&lt;/td&gt;&lt;td&gt;150M&lt;/td&gt;&lt;td&gt;TGE 50% + 线性&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;DAO&lt;/td&gt;&lt;td&gt;5%&lt;/td&gt;&lt;td&gt;50M&lt;/td&gt;&lt;td&gt;AI投票&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;渠道邀请&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;100M&lt;/td&gt;&lt;td&gt;返佣 + 解锁&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;p&gt;&lt;strong&gt;TGE 流通: 25%&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;h2&gt;3. 手续费 (0.07%)&lt;/h2&gt;
+  &lt;p&gt;&lt;strong&gt;Maker: 0.02% | Taker: 0.05%&lt;/strong&gt;&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;0.04% (对称): 有邀返0.01%*2 / 无邀回购0.02%*2&lt;/li&gt;
+    &lt;li&gt;0.03% (Taker): MM 激励&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;回购: TWAP买 $AWT → 烧50%/LP50%&lt;/p&gt;
+
+  &lt;h2&gt;4. 交易挖矿 (50%, 非MM)&lt;/h2&gt;
+  &lt;p&gt;积分 = Vol * 1.5 (Maker). 日池 ~547k. 周Claim, vesting 7天.&lt;/p&gt;
+
+  &lt;h2&gt;5. 邀请渠道 (10%)&lt;/h2&gt;
+  &lt;p&gt;返佣即时0.01%*2 + 积分(Vol*0.001), 每日30天vesting解锁.&lt;/p&gt;
+
+  &lt;h2&gt;6. 经济模拟&lt;/h2&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;th&gt;月&lt;/th&gt;&lt;th&gt;Vol&lt;/th&gt;&lt;th&gt;返佣&lt;/th&gt;&lt;th&gt;回购&lt;/th&gt;&lt;th&gt;APY&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;$4.7M&lt;/td&gt;&lt;td&gt;$47k&lt;/td&gt;&lt;td&gt;$47k&lt;/td&gt;&lt;td&gt;160%&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;$200M&lt;/td&gt;&lt;td&gt;$2M&lt;/td&gt;&lt;td&gt;$2M&lt;/td&gt;&lt;td&gt;22%&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;h2&gt;7. 合约 &amp; AI管理&lt;/h2&gt;
+  &lt;p&gt;Arbitrum ERC20 + Vaults. Indexer(Orderly API). Subagent监控.&lt;/p&gt;
+
+  &lt;p style=&quot;text-align: center; font-size: 12px; color: #666;&quot;&gt;
+    AlgoWhirl: AI-Powered Perp DEX. $AWT to infinity.
+  &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;

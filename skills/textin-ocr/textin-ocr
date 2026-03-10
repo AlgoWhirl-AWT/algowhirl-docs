@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Textin OCR - Wrapper script for easy access
+# This script ensures environment variables are loaded
+
+# Try to load from .zshrc if running interactively
+if [ -f "$HOME/.zshrc" ] && [ -z "$TEXTIN_APP_ID" ]; then
+    # Extract environment variables from .zshrc
+    export TEXTIN_APP_ID=$(grep "export TEXTIN_APP_ID=" "$HOME/.zshrc" | tail -1 | sed 's/export TEXTIN_APP_ID=//' | tr -d '"')
+    export TEXTIN_SECRET_CODE=$(grep "export TEXTIN_SECRET_CODE=" "$HOME/.zshrc" | tail -1 | sed 's/export TEXTIN_SECRET_CODE=//' | tr -d '"')
+fi
+
+# Get the real directory where this script is located (resolve symlinks)
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+done
+SCRIPT_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+# Run the index.js with all arguments
+node "$SCRIPT_DIR/index.js" "$@"

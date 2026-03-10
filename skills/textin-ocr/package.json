@@ -1,0 +1,25 @@
+{
+  "name": "textin-ocr",
+  "version": "1.0.0",
+  "description": "Textin OCR services for business license, ID card, document parsing, and general text recognition",
+  "main": "index.js",
+  "bin": {
+    "textin-ocr": "./index.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "ocr",
+    "textin",
+    "business-license",
+    "id-card",
+    "document-parsing",
+    "text-recognition"
+  ],
+  "author": "Claude",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

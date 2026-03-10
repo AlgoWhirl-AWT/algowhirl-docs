@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.textin.com)",
+      "WebFetch(domain:docs.textin.com)",
+      "Bash(chmod:*)",
+      "Bash(node:*)",
+      "Bash(export TEXTIN_APP_ID=*)",
+      "Bash(export TEXTIN_SECRET_CODE=*)"
+    ]
+  }
+}
