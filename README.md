@@ -2,134 +2,292 @@
 
 Trade Perps. Earn AWT.
 
-AlgoWhirl 是一个基于 Orderly Network 构建的永续合约交易协议，通过交易挖矿、邀请奖励和代币回购机制，将交易行为转化为协议所有权。
+AlgoWhirl is a perpetual futures trading protocol designed to transform trading activity into tokenized ownership. By combining trading incentives, referral rewards, and token buybacks, AlgoWhirl aligns trader participation with long‑term protocol growth.
 
-## 项目概述
-AlgoWhirl 是一个去中心化永续合约交易平台（Perpetual DEX），结合高性能交易系统与代币激励机制，使交易者在参与市场的同时获得 AWT 代币奖励。
+---
 
-核心特点：
-- 深度流动性（Orderly Network）
-- 低交易费用
-- 交易挖矿奖励
-- 邀请奖励系统
-- 社区驱动增长
+# 1. Project Overview
 
-## 代币基本信息
+AlgoWhirl is a decentralized perpetual exchange (Perp DEX) built with Orderly Network infrastructure.
+
+The protocol combines high‑performance derivatives trading with a token incentive system that rewards real trading activity.
+
+Key Features
+
+- Deep liquidity powered by Orderly Network
+- Low trading fees
+- Trade mining incentives
+- Referral reward system
+- Community‑driven growth
+
+Core Vision
+
+Trade Perps. Earn AWT.
+
+---
+
+# 2. Token Information
+
 Token: AWT
 
-名称: AlgoWhirl Token
+Name: AlgoWhirl Token
 
-总供应量: 1,000,000,000 AWT
+Total Supply: 1,000,000,000 AWT
 
-网络: Base
+Network: Base
 
-TGE 初始流通: 约 25%
+TGE Initial Circulating Supply: ~25%
 
-## 代币分配
-交易挖矿 — 50%
+---
 
-LP 挖矿 — 15%
+# 3. Token Distribution
 
-邀请奖励 — 10%
+AWT follows a community‑driven distribution model.
 
-早期用户 — 10%
+Trade Mining — 50%
 
-增长活动 — 10%
+Liquidity Mining — 15%
+
+Referral Rewards — 10%
+
+Early Users — 10%
+
+Growth Campaigns — 10%
 
 DAO Treasury — 5%
 
-## 手续费模型
-Maker Fee: 0.02%
+---
 
-Taker Fee: 0.05%
+# 4. Trading Fee Model
 
-Total Fee: 0.07%
+AlgoWhirl uses a Maker / Taker fee structure.
 
-## 手续费分配
-Maker 手续费：
+Maker Fee
 
-存在邀请关系：
-- 0.01% 邀请返佣
-- 0.01% 协议回购
+0.02%
 
-无邀请关系：
-- 0.02% 回购
+Taker Fee
 
-Taker 手续费：
-- 0.03% MM 激励
-- 0.01% 邀请返佣
-- 0.01% 回购
+0.05%
 
-## AWT 回购机制
-回购资金来源：Maker / Taker 手续费
+Total Trading Fee
 
-回购后分配：
-- 50% 销毁
-- 50% 加入 LP
+0.07%
 
-## 交易挖矿
-总量：500,000,000 AWT
+---
 
-释放周期：3 年
+# 5. Fee Distribution
 
-Year1: 200M
+Maker Fee Distribution
 
-Year2: 175M
+If referral exists:
 
-Year3: 125M
+- 0.01% referral rebate
+- 0.01% protocol buyback
 
-每日最大奖励池：
+If no referral:
 
-547,000 AWT
+- 0.02% protocol buyback
 
-实际奖励：
+Taker Fee Distribution
+
+- 0.03% market maker incentive
+- 0.01% referral rebate
+- 0.01% protocol buyback
+
+---
+
+# 6. AWT Buyback Mechanism
+
+Buyback funds come from trading fees.
+
+Buyback Process
+
+The protocol automatically purchases AWT from the market.
+
+Distribution of Bought Tokens
+
+- 50% burned
+- 50% added to liquidity pools
+
+Objectives
+
+- Reduce circulating supply
+- Increase liquidity depth
+
+---
+
+# 7. Trade Mining
+
+Trade mining rewards active traders with AWT tokens.
+
+Total Mining Allocation
+
+500,000,000 AWT
+
+Emission Period
+
+3 Years
+
+Emission Schedule
+
+Year 1: 200M
+
+Year 2: 175M
+
+Year 3: 125M
+
+---
+
+# 8. Daily Reward Pool
+
+Maximum daily emission during Year 1:
+
+200,000,000 / 365
+
+≈ 547,000 AWT per day
+
+Actual Reward Pool
 
 Daily Reward Pool = min(547000, Trading Volume × 0.8%)
 
-积分公式：
+Purpose
+
+Prevent wash trading attacks.
+
+---
+
+# 9. Trading Points
+
+Points Formula
 
 Points = Trading Volume × Multiplier
 
-Maker = 1.5x
+Multiplier
 
-Taker = 1x
+Maker: 1.5x
 
-奖励计算：
+Taker: 1x
+
+---
+
+# 10. Reward Distribution
+
+User Reward
 
 User Reward = (User Points / Total Points) × Daily Reward Pool
 
-奖励释放：
+---
 
-Claim 后 7 天线性释放
+# 11. Reward Vesting
 
-## 邀请系统
-手续费返佣：
+To reduce sell pressure, rewards are not released instantly.
+
+Claimed rewards are released linearly over 7 days.
+
+---
+
+# 12. Referral System
+
+Each user can generate an invite code.
+
+Referral Rewards
 
 Invite Reward = Invite Volume × 0.01%
 
-邀请积分：
+Referral Points
 
 Invite Points = Invite Volume × 0.1%
 
-## veAWT 机制
+Referral points also participate in trade mining rewards.
+
+---
+
+# 13. AWT Holding Incentives
+
+Holding AWT grants trading fee discounts.
+
+Mechanism
+
+Users pay lower trading fees.
+
+Trade mining rewards are proportionally reduced to maintain economic balance.
+
+---
+
+# 14. AWT Locking
+
+Users can lock AWT to increase mining rewards.
+
+Longer lock periods result in higher benefits.
+
+---
+
+# 15. veAWT Mechanism
+
+Locking AWT generates veAWT.
+
+Formula
+
 veAWT = AWT × Lock Time
 
-作用：
-- Boost 挖矿
-- DAO 治理
-- 协议收益分红
+Utility
 
-## 增长飞轮
-交易 → 手续费 → 回购 AWT → 销毁 + LP → 流动性增加 → 更多交易
+- Mining reward boost
+- DAO governance voting
+- Share of protocol revenue
 
-同时：
+---
 
-交易 → 挖矿 → 获得 AWT → 锁仓 → veAWT → Boost + 治理
+# 16. Growth Flywheel
 
-## Roadmap
-Phase 1 — Launch DEX
+AlgoWhirl's economic flywheel:
 
-Phase 2 — Launch Mining
+Trading
+
+↓
+
+Fees Generated
+
+↓
+
+Fee Allocation
+
+- 0.03% MM incentive
+- 0.01% referral reward
+- 0.02% AWT buyback
+
+↓
+
+Buyback AWT
+
+↓
+
+50% Burn + 50% LP
+
+↓
+
+Higher Liquidity
+
+↓
+
+Better Trading Experience
+
+↓
+
+More Trading Activity
+
+Secondary Loop
+
+Trading → Mining Rewards → Earn AWT → Sell or Lock → veAWT → Governance + Boost
+
+---
+
+# 17. Roadmap
+
+Phase 1 — Launch Perpetual DEX
+
+Phase 2 — Launch Trade Mining
 
 Phase 3 — DAO Governance
 
