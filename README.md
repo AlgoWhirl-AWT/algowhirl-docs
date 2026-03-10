@@ -1,48 +1,60 @@
-# AlgoWhirl Whitepaper
+# AlgoWhirl
 
-Trade Perps. Earn AWT.
+## Trade Perps. Earn AWT.
 
-AlgoWhirl is a perpetual futures trading protocol designed to transform trading activity into tokenized ownership. By combining trading incentives, referral rewards, and token buybacks, AlgoWhirl aligns trader participation with long‑term protocol growth.
+AlgoWhirl is an incentive‑driven perpetual futures trading protocol designed to transform trading activity into tokenized ownership.
+
+Built on top of Orderly Network infrastructure, AlgoWhirl combines deep liquidity with a powerful token incentive system. Traders, liquidity providers, and community participants earn AWT tokens by contributing to the protocol’s growth.
+
+The core idea is simple:
+
+**Trade Perps. Earn AWT. Own the Protocol.**
 
 ---
 
-# 1. Project Overview
+# What is AlgoWhirl
 
-AlgoWhirl is a decentralized perpetual exchange (Perp DEX) built with Orderly Network infrastructure.
+AlgoWhirl is a decentralized perpetual exchange (Perp DEX) that integrates trading infrastructure with a tokenized incentive economy.
 
-The protocol combines high‑performance derivatives trading with a token incentive system that rewards real trading activity.
+Instead of rewarding only liquidity providers, AlgoWhirl rewards the entire ecosystem:
+
+• Traders
+• Liquidity providers
+• Referrers
+• Early community members
+
+This creates a growth loop where trading activity directly drives token distribution and protocol expansion.
 
 Key Features
 
-- Deep liquidity powered by Orderly Network
-- Low trading fees
-- Trade mining incentives
-- Referral reward system
-- Community‑driven growth
-
-Core Vision
-
-Trade Perps. Earn AWT.
+• Deep liquidity powered by Orderly Network
+• Low trading fees
+• Trade mining incentives
+• Referral reward system
+• Token buyback and burn mechanism
+• Community‑driven token distribution
 
 ---
 
-# 2. Token Information
+# Token Overview
 
-Token: AWT
+Token Name: AlgoWhirl Token
 
-Name: AlgoWhirl Token
+Symbol: AWT
 
 Total Supply: 1,000,000,000 AWT
 
 Network: Base
 
-TGE Initial Circulating Supply: ~25%
+TGE Circulating Supply: ~25%
+
+AWT powers the AlgoWhirl ecosystem by incentivizing trading activity and aligning long‑term protocol ownership with its users.
 
 ---
 
-# 3. Token Distribution
+# Token Distribution
 
-AWT follows a community‑driven distribution model.
+AWT uses a community‑first distribution model.
 
 Trade Mining — 50%
 
@@ -56,142 +68,68 @@ Growth Campaigns — 10%
 
 DAO Treasury — 5%
 
----
-
-# 4. Trading Fee Model
-
-AlgoWhirl uses a Maker / Taker fee structure.
-
-Maker Fee
-
-0.02%
-
-Taker Fee
-
-0.05%
-
-Total Trading Fee
-
-0.07%
+This ensures the majority of tokens are distributed to active ecosystem participants.
 
 ---
 
-# 5. Fee Distribution
+# Economic Model
 
-Maker Fee Distribution
+AlgoWhirl introduces a sustainable trading incentive model.
 
-If referral exists:
+Trading generates fees which are distributed across the ecosystem:
 
-- 0.01% referral rebate
-- 0.01% protocol buyback
+• Market maker incentives
+• Referral rewards
+• Protocol buybacks
 
-If no referral:
+Protocol buybacks purchase AWT from the market and redistribute value through:
 
-- 0.02% protocol buyback
+• Token burn
+• Liquidity pool growth
 
-Taker Fee Distribution
+This creates a self‑reinforcing growth loop:
 
-- 0.03% market maker incentive
-- 0.01% referral rebate
-- 0.01% protocol buyback
-
----
-
-# 6. AWT Buyback Mechanism
-
-Buyback funds come from trading fees.
-
-Buyback Process
-
-The protocol automatically purchases AWT from the market.
-
-Distribution of Bought Tokens
-
-- 50% burned
-- 50% added to liquidity pools
-
-Objectives
-
-- Reduce circulating supply
-- Increase liquidity depth
+Trading → Fees → Buyback → Burn + Liquidity → Better Markets → More Trading
 
 ---
 
-# 7. Trade Mining
+# Trade Mining
 
-Trade mining rewards active traders with AWT tokens.
+Trade mining rewards active traders with AWT.
 
-Total Mining Allocation
+Total Allocation
 
 500,000,000 AWT
 
 Emission Period
 
-3 Years
+3 years
 
 Emission Schedule
 
-Year 1: 200M
+Year 1 — 200M
 
-Year 2: 175M
+Year 2 — 175M
 
-Year 3: 125M
+Year 3 — 125M
 
----
-
-# 8. Daily Reward Pool
-
-Maximum daily emission during Year 1:
-
-200,000,000 / 365
-
-≈ 547,000 AWT per day
-
-Actual Reward Pool
-
-Daily Reward Pool = min(547000, Trading Volume × 0.8%)
-
-Purpose
-
-Prevent wash trading attacks.
-
----
-
-# 9. Trading Points
+Daily reward pool is capped to prevent wash trading.
 
 Points Formula
 
 Points = Trading Volume × Multiplier
 
-Multiplier
+Maker Multiplier — 1.5x
 
-Maker: 1.5x
-
-Taker: 1x
+Taker Multiplier — 1x
 
 ---
 
-# 10. Reward Distribution
+# Referral Incentives
 
-User Reward
+AlgoWhirl includes a referral system that rewards users for bringing new traders to the protocol.
 
-User Reward = (User Points / Total Points) × Daily Reward Pool
-
----
-
-# 11. Reward Vesting
-
-To reduce sell pressure, rewards are not released instantly.
-
-Claimed rewards are released linearly over 7 days.
-
----
-
-# 12. Referral System
-
-Each user can generate an invite code.
-
-Referral Rewards
+Referral Rebate
 
 Invite Reward = Invite Volume × 0.01%
 
@@ -199,91 +137,46 @@ Referral Points
 
 Invite Points = Invite Volume × 0.1%
 
-Referral points also participate in trade mining rewards.
+These points also contribute to trade mining rewards.
 
 ---
 
-# 13. AWT Holding Incentives
+# veAWT
 
-Holding AWT grants trading fee discounts.
+Users can lock AWT to receive veAWT.
 
-Mechanism
-
-Users pay lower trading fees.
-
-Trade mining rewards are proportionally reduced to maintain economic balance.
-
----
-
-# 14. AWT Locking
-
-Users can lock AWT to increase mining rewards.
-
-Longer lock periods result in higher benefits.
-
----
-
-# 15. veAWT Mechanism
-
-Locking AWT generates veAWT.
-
-Formula
-
-veAWT = AWT × Lock Time
+veAWT represents long‑term commitment to the protocol.
 
 Utility
 
-- Mining reward boost
-- DAO governance voting
-- Share of protocol revenue
+• Boost trade mining rewards
+• Participate in DAO governance
+• Share protocol revenue
+
+The longer AWT is locked, the more veAWT is generated.
 
 ---
 
-# 16. Growth Flywheel
+# Growth Flywheel
 
-AlgoWhirl's economic flywheel:
+AlgoWhirl’s economic design forms a powerful growth cycle.
 
-Trading
+1. Traders generate volume
+2. Trading fees accumulate
+3. Fees fund AWT buybacks
+4. Buybacks burn tokens and add liquidity
+5. Deeper liquidity improves trading
+6. More traders join the protocol
 
-↓
+At the same time:
 
-Fees Generated
+Trading → Mining → Earn AWT → Lock → veAWT → Governance + Reward Boost
 
-↓
-
-Fee Allocation
-
-- 0.03% MM incentive
-- 0.01% referral reward
-- 0.02% AWT buyback
-
-↓
-
-Buyback AWT
-
-↓
-
-50% Burn + 50% LP
-
-↓
-
-Higher Liquidity
-
-↓
-
-Better Trading Experience
-
-↓
-
-More Trading Activity
-
-Secondary Loop
-
-Trading → Mining Rewards → Earn AWT → Sell or Lock → veAWT → Governance + Boost
+This aligns protocol growth with user participation.
 
 ---
 
-# 17. Roadmap
+# Roadmap
 
 Phase 1 — Launch Perpetual DEX
 
@@ -292,3 +185,7 @@ Phase 2 — Launch Trade Mining
 Phase 3 — DAO Governance
 
 Phase 4 — Cross‑Chain Expansion
+
+---
+
+For detailed documentation, visit the Docs sections in this repository.
