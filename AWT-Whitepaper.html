@@ -1,66 +1,111 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;AWT Token Whitepaper - AlgoWhirl&lt;/title&gt;
-  &lt;style&gt;
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWT Token Whitepaper - AlgoWhirl</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 860px; margin: 0 auto; padding: 20px; line-height: 1.7; color: #333; }
     h1, h2 { color: #1a73e8; }
-    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
-    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-    th { background-color: #f2f2f2; }
+    h2 { border-bottom: 2px solid #e8f0fe; padding-bottom: 6px; margin-top: 36px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+    th, td { border: 1px solid #ddd; padding: 10px 14px; text-align: left; }
+    th { background-color: #f2f2f2; font-weight: 600; }
+    tr:nth-child(even) { background: #fafafa; }
     .header { text-align: center; background: linear-gradient(90deg, #1a73e8, #34a853); color: white; padding: 40px; border-radius: 10px; margin-bottom: 40px; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;header&quot;&gt;
-    &lt;h1&gt;$AWT Token Whitepaper&lt;/h1&gt;
-    &lt;p&gt;AlgoWhirl Perp DEX - AI Managed Tokenomics&lt;/p&gt;
-    &lt;p&gt;Version 1.0 | March 9, 2026&lt;/p&gt;
-  &lt;/div&gt;
+    .header p { margin: 6px 0; opacity: 0.9; }
+    code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.88em; word-break: break-all; }
+    .address-row td:last-child { font-family: monospace; font-size: 0.85em; }
+    a { color: #1a73e8; }
+    ul li { margin: 4px 0; }
+    .footer { text-align: center; font-size: 12px; color: #888; margin-top: 48px; padding-top: 20px; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>$AWT Token Whitepaper</h1>
+    <p>AlgoWhirl Perp DEX — AI Managed Tokenomics</p>
+    <p>Version 1.1 | March 21, 2026</p>
+  </div>
 
-  &lt;h2&gt;1. 项目概述&lt;/h2&gt;
-  &lt;p&gt;AlgoWhirl 是基于 Orderly Network 的 Perp DEX，支持高杠杆永续合约交易。全 AI 管理，无团队份额，100% 社区驱动。&lt;/p&gt;
+  <h2>1. 项目概述</h2>
+  <p>AlgoWhirl 是基于 <strong>Orderly Network</strong> 的 Perp DEX，支持高杠杆永续合约交易。全 AI 管理，无团队份额，100% 社区驱动。</p>
+  <ul>
+    <li><strong>代币</strong>：$AWT (AlgoWhirl Token)</li>
+    <li><strong>总供应</strong>：1,000,000,000 (1B)</li>
+    <li><strong>小数位</strong>：18</li>
+    <li><strong>网络</strong>：Base Mainnet (Chain ID: 8453)</li>
+    <li><strong>合约地址</strong>：<code>0x4365B7cDA1250B6962e1F139E6AE548A31263655</code></li>
+    <li><strong>Basescan</strong>：<a href="https://basescan.org/token/0x4365B7cDA1250B6962e1F139E6AE548A31263655" target="_blank">查看合约</a></li>
+  </ul>
 
-  &lt;h2&gt;2. Tokenomics&lt;/h2&gt;
-  &lt;table&gt;
-    &lt;tr&gt;&lt;th&gt;类别&lt;/th&gt;&lt;th&gt;比例&lt;/th&gt;&lt;th&gt;数量&lt;/th&gt;&lt;th&gt;规则&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;早期空投&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;100M&lt;/td&gt;&lt;td&gt;TGE 快照&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;交易挖矿 (非MM)&lt;/td&gt;&lt;td&gt;50%&lt;/td&gt;&lt;td&gt;500M&lt;/td&gt;&lt;td&gt;2.5年线性&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;任务空投&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;100M&lt;/td&gt;&lt;td&gt;任务完成&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;LP&lt;/td&gt;&lt;td&gt;15%&lt;/td&gt;&lt;td&gt;150M&lt;/td&gt;&lt;td&gt;TGE 50% + 线性&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;DAO&lt;/td&gt;&lt;td&gt;5%&lt;/td&gt;&lt;td&gt;50M&lt;/td&gt;&lt;td&gt;AI投票&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;渠道邀请&lt;/td&gt;&lt;td&gt;10%&lt;/td&gt;&lt;td&gt;100M&lt;/td&gt;&lt;td&gt;返佣 + 解锁&lt;/td&gt;&lt;/tr&gt;
-  &lt;/table&gt;
-  &lt;p&gt;&lt;strong&gt;TGE 流通: 25%&lt;/strong&gt;&lt;/p&gt;
+  <h2>2. Tokenomics</h2>
+  <table>
+    <tr><th>类别</th><th>比例</th><th>数量</th><th>规则</th></tr>
+    <tr><td>早期空投</td><td>10%</td><td>100M</td><td>TGE 快照 (前1k用户)</td></tr>
+    <tr><td>交易挖矿 (非MM)</td><td>50%</td><td>500M</td><td>2.5年线性释放, Halving 12月</td></tr>
+    <tr><td>任务空投</td><td>10%</td><td>100M</td><td>任务完成解锁</td></tr>
+    <tr><td>LP 激励</td><td>15%</td><td>150M</td><td>TGE 50% + 线性释放</td></tr>
+    <tr><td>DAO 金库</td><td>5%</td><td>50M</td><td>AI 投票管理</td></tr>
+    <tr><td>渠道邀请</td><td>10%</td><td>100M</td><td>返佣 + 积分解锁</td></tr>
+  </table>
+  <p><strong>TGE 初始流通: 25%</strong></p>
 
-  &lt;h2&gt;3. 手续费 (0.07%)&lt;/h2&gt;
-  &lt;p&gt;&lt;strong&gt;Maker: 0.02% | Taker: 0.05%&lt;/strong&gt;&lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;0.04% (对称): 有邀返0.01%*2 / 无邀回购0.02%*2&lt;/li&gt;
-    &lt;li&gt;0.03% (Taker): MM 激励&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;p&gt;回购: TWAP买 $AWT → 烧50%/LP50%&lt;/p&gt;
+  <h2>3. 手续费模型 (0.07%)</h2>
+  <p><strong>Maker: 0.02% | Taker: 0.05%</strong></p>
+  <ul>
+    <li><strong>0.04%</strong>（对称部分）：有邀请码 → 返佣 0.01%×2；无邀请码 → 回购 $AWT 0.02%×2</li>
+    <li><strong>0.03%</strong>（Taker 部分）：做市商 (MM) 激励</li>
+  </ul>
+  <p>回购机制：TWAP 买入 $AWT → 50% 销毁 / 50% 注入 LP</p>
 
-  &lt;h2&gt;4. 交易挖矿 (50%, 非MM)&lt;/h2&gt;
-  &lt;p&gt;积分 = Vol * 1.5 (Maker). 日池 ~547k. 周Claim, vesting 7天.&lt;/p&gt;
+  <h2>4. 交易挖矿 (50%, 非MM)</h2>
+  <ul>
+    <li>积分 = 交易量 × Multiplier（Maker 1.5x，Taker 1.0x）</li>
+    <li>日奖励池 = min(547k AWT, 交易量 × 0.0008)</li>
+    <li>每周 Claim，7天 vesting 解锁</li>
+  </ul>
 
-  &lt;h2&gt;5. 邀请渠道 (10%)&lt;/h2&gt;
-  &lt;p&gt;返佣即时0.01%*2 + 积分(Vol*0.001), 每日30天vesting解锁.&lt;/p&gt;
+  <h2>5. 邀请渠道 (10%)</h2>
+  <ul>
+    <li>返佣：即时发放 0.01%×2（$AWT）</li>
+    <li>积分：被邀请人交易量 × 0.001，每日解锁（30天 vesting）</li>
+  </ul>
 
-  &lt;h2&gt;6. 经济模拟&lt;/h2&gt;
-  &lt;table&gt;
-    &lt;tr&gt;&lt;th&gt;月&lt;/th&gt;&lt;th&gt;Vol&lt;/th&gt;&lt;th&gt;返佣&lt;/th&gt;&lt;th&gt;回购&lt;/th&gt;&lt;th&gt;APY&lt;/th&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;$4.7M&lt;/td&gt;&lt;td&gt;$47k&lt;/td&gt;&lt;td&gt;$47k&lt;/td&gt;&lt;td&gt;160%&lt;/td&gt;&lt;/tr&gt;
-    &lt;tr&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;$200M&lt;/td&gt;&lt;td&gt;$2M&lt;/td&gt;&lt;td&gt;$2M&lt;/td&gt;&lt;td&gt;22%&lt;/td&gt;&lt;/tr&gt;
-  &lt;/table&gt;
+  <h2>6. 经济模拟 (Vol $156k/日)</h2>
+  <table>
+    <tr><th>月份</th><th>月交易量</th><th>返佣</th><th>回购</th><th>预计 APY</th></tr>
+    <tr><td>第 1 月</td><td>$4.7M</td><td>$47k</td><td>$47k</td><td>~160%</td></tr>
+    <tr><td>第 12 月</td><td>$200M</td><td>$2M</td><td>$2M</td><td>~22%</td></tr>
+  </table>
 
-  &lt;h2&gt;7. 合约 &amp; AI管理&lt;/h2&gt;
-  &lt;p&gt;Arbitrum ERC20 + Vaults. Indexer(Orderly API). Subagent监控.&lt;/p&gt;
+  <h2>7. 合约地址 (Base Mainnet)</h2>
+  <table class="address-row">
+    <tr><th>合约</th><th>地址</th><th>说明</th></tr>
+    <tr><td>AWT Token</td><td><code>0x4365B7cDA1250B6962e1F139E6AE548A31263655</code></td><td>ERC-20，总量 1B</td></tr>
+    <tr><td>TokenDistributor</td><td><code>0x64dd27DdB5D266Ed29059C4296D183126A3f77a2</code></td><td>代币分发合约</td></tr>
+    <tr><td>MiningRewardsVault</td><td><code>0xb32e3164eb8a72ac59673998F8EdFC89c94E9BDE</code></td><td>交易挖矿 500M AWT</td></tr>
+    <tr><td>LPFarming</td><td><code>0x7CeD4ee8DAbaE7820f8DCE9396389b4106E71375</code></td><td>LP 挖矿 150M AWT，3年释放</td></tr>
+    <tr><td>LiquidityVault</td><td><code>0xbd95191388f7Ede6CD317f3233eD3384E83d80BA</code></td><td>流动性挖矿 15%</td></tr>
+    <tr><td>ReferralVault</td><td><code>0xb6AE025b99933ea81ABA0ab5c95Bdd48674E6141</code></td><td>推荐奖励 10%</td></tr>
+    <tr><td>EarlyUsersVault</td><td><code>0x99e71D124A9441d0245826978dBc55FB9bF1835B</code></td><td>早期用户空投 10%</td></tr>
+    <tr><td>GrowthVault</td><td><code>0x28b92ef067331C9887b9baDd54b21784051ef8e7</code></td><td>增长活动 10%</td></tr>
+    <tr><td>DAOTreasury</td><td><code>0x9c7213F7EfD54c5a2dc6098E24c550Eb7e59052C</code></td><td>DAO 金库 5%</td></tr>
+    <tr><td>Gnosis Safe (Owner)</td><td><code>0x2283D5dC7D9161405907913d69662BC69a0Ac8bD</code></td><td>2/2 多签，所有合约 owner</td></tr>
+  </table>
+  <p>所有合约均部署在 <strong>Base 主网</strong>，可通过 <a href="https://basescan.org" target="_blank">Basescan</a> 验证。</p>
 
-  &lt;p style=&quot;text-align: center; font-size: 12px; color: #666;&quot;&gt;
-    AlgoWhirl: AI-Powered Perp DEX. $AWT to infinity.
-  &lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+  <h2>8. AI 管理架构</h2>
+  <ul>
+    <li><strong>Indexer</strong>：实时抓取 Orderly API 数据，更新链上奖励</li>
+    <li><strong>Subagent</strong>：自动监控、执行 DAO 决议</li>
+    <li><strong>多签治理</strong>：2/2 Gnosis Safe，所有关键操作需多签确认</li>
+    <li><strong>无团队份额</strong>：100% 代币通过协议规则分配给社区</li>
+  </ul>
+
+  <div class="footer">
+    <p>AlgoWhirl: AI-Powered Perp DEX. $AWT to infinity.</p>
+    <p>Version 1.1 | 2026-03-21 | <a href="https://algowhirl.com" target="_blank">algowhirl.com</a></p>
+  </div>
+</body>
+</html>
